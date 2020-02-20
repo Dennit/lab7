@@ -10,4 +10,11 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	console.log( "Clicked button");
+	$(".likeCtr").click( sendDate);
+}
+function sendDate(){
+	console.log( "Sent data")
+	ga( "send", "event", 'like', 'click');
+
 }
